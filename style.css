@@ -100,7 +100,14 @@ a:hover { text-decoration-thickness: 2px; }
 
 /* ---------- Sections ---------- */
 .page-figure { margin: 0 0 1.6em; }
-.page-figure img { display: block; width: 100%; height: auto; border-radius: 6px; }
+.page-figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  max-height: calc(100vh - 190px);
+  border-radius: 6px;
+}
 section { padding-bottom: 56px; }
 section + section { padding-top: 40px; border-top: 1px solid var(--line); }
 h2 {

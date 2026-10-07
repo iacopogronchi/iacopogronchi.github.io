@@ -178,6 +178,13 @@ details.abstract p {
 
 footer { color: var(--muted); font-size: 0.85rem; padding-top: 24px; border-top: 1px solid var(--line); }
 
+/* Desktop: compact Spotify + YouTube pairs, same height */
+@media (min-width: 861px) {
+  .embeds { grid-template-columns: 1fr calc(152px * 16 / 9); gap: 14px 16px; align-items: start; }
+  .embeds .sp { height: 152px; }
+  .embeds .yt { height: 152px; aspect-ratio: auto; }
+}
+
 /* ---------- Mobile ---------- */
 @media (max-width: 860px) {
   body { font-size: 16px; }

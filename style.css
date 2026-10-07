@@ -181,7 +181,6 @@ footer { color: var(--muted); font-size: 0.85rem; padding-top: 24px; border-top:
   }
   .index { display: none; margin-top: 10px; padding-top: 10px; }
   .sidebar.open .index { display: block; }
-  .sidebar.open .affil, .sidebar.open .quick-links { display: block; margin-top: 10px; }
   .content { margin-left: 0; padding: 28px 18px 72px; }
   html { scroll-padding-top: 70px; }
   .embeds { grid-template-columns: 1fr; }

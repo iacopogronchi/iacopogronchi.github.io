@@ -160,6 +160,22 @@ ul.plain li { margin-bottom: 4px; }
   padding: 10px 14px; font-size: 0.9rem; color: var(--muted);
 }
 
+/* Abstract drop-downs */
+details.abstract { margin-top: 6px; }
+details.abstract summary {
+  cursor: pointer; display: inline-block; list-style: none;
+  color: var(--accent); font-size: 0.85rem;
+  text-decoration: underline; text-underline-offset: 3px; text-decoration-thickness: 1px;
+}
+details.abstract summary::-webkit-details-marker { display: none; }
+details.abstract summary::before { content: "+ "; text-decoration: none; display: inline-block; }
+details.abstract[open] summary::before { content: "– "; }
+details.abstract p {
+  margin: 8px 0 0; padding: 4px 0 4px 14px;
+  border-left: 2px solid var(--line);
+  color: var(--muted); font-size: 0.92rem; line-height: 1.6;
+}
+
 footer { color: var(--muted); font-size: 0.85rem; padding-top: 24px; border-top: 1px solid var(--line); }
 
 /* ---------- Mobile ---------- */

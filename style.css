@@ -63,6 +63,8 @@ a:hover { text-decoration-thickness: 2px; }
   font-weight: 600;
   letter-spacing: -0.01em;
 }
+.site-name a { color: inherit; text-decoration: none; }
+.site-name a:hover { color: var(--accent); }
 .affil {
   font-size: 0.88rem;
   color: var(--muted);
